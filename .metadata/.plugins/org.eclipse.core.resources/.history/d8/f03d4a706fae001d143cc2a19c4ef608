@@ -1,0 +1,36 @@
+package usecases;
+
+import javax.persistence.EntityManager;
+
+import model.Address;
+import model.Employee;
+import utility.EMUtil;
+
+
+
+	public class Demo {
+		
+		public static void main(String[] args) {
+			
+			EntityManager em= EMUtil.getConnection();
+			
+			Employee emp=new Employee();
+			emp.setEmpName("Ram");
+			emp.setSalary(7800);
+			emp.setAdd(new Address("Maharastra", "pune", "75455"));
+			
+			
+			//Address adr=new Address("maharastra", "pune","75455");
+			//emp.setAddr(adr);
+			
+			em.getTransaction().begin();
+			
+			em.persist(emp);
+			
+			em.getTransaction().commit();
+			
+			System.out.println("done...");
+			
+		}
+
+	}

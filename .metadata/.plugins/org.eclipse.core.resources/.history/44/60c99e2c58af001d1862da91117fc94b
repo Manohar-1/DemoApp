@@ -1,0 +1,27 @@
+package com.product.demo;
+
+import javax.persistence.EntityManager;
+
+import com.product.model.Book;
+import com.product.model.Product;
+import com.product.utility.EMUtil;
+
+public class Demo {
+       public static void main(String[] args){
+		    EntityManager em=EMUtil.provideEntityManager(); 
+		    
+		    Book b=new Book("Napolean Hill"); 
+		    
+		    b.setName("Think and grow rich");
+		    b.setProductId(1);
+		    
+		    em.getTransaction().begin(); 
+		    
+		    em.persist(b);
+		    
+		    em.getTransaction().commit();
+		    
+		    em.close();
+		    
+	   }
+}

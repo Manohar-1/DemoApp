@@ -1,0 +1,72 @@
+package model;
+
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Employee {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+    private int eid;
+    private String ename; 
+    private int salary; 
+    
+    @Embedded
+    private Address add;
+
+	public Employee(int empID, String empName, int salary, Address add) {
+		super();
+		this.eid = empID;
+		this.ename = empName;
+		this.salary = salary;
+		this.add = add;
+	}
+
+	public Employee() {
+		
+	}
+
+	public int getEmpID() {
+		return eid;
+	}
+
+	public void setEmpID(int empID) {
+		this.eid = empID;
+	}
+
+	public String getEmpName() {
+		return ename;
+	}
+
+	public void setEmpName(String empName) {
+		this.ename = empName;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	public Address getAdd() {
+		return add;
+	}
+
+	public void setAdd(Address add) {
+		this.add = add;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [empID=" + eid + ", empName=" + ename + ", salary=" + salary + ", add=" + add + "]";
+	}
+    
+    
+    
+    
+}

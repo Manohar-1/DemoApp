@@ -5,7 +5,6 @@ import javax.persistence.Table;
 
 @Entity 
 @Table(name = "ADDRESS") 
-
 public class Address {
 	@Id 
 	private int aid; 

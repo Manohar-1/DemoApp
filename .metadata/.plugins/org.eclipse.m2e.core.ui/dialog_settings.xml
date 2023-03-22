@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\mudha\OneDrive\Desktop\Demo\SampleCollegeApplication"/>
 			<item value="C:\Users\mudha\OneDrive\Desktop\Demo\DemoApp11"/>
 			<item value="C:\Users\mudha\OneDrive\Desktop\Demo\DemoApp9"/>
 			<item value="C:\Users\mudha\OneDrive\Desktop\Demo\DemoApp8"/>
@@ -51,10 +52,11 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.student"/>
+			<item value="com.college"/>
 			<item value="com"/>
 			<item value="com.studentcourse"/>
 			<item value="com.employee"/>
-			<item value="com.student"/>
 			<item value="vehicle"/>
 			<item value="animal"/>
 			<item value="com.product"/>
@@ -64,6 +66,8 @@
 			<item value="DemoApp1"/>
 		</list>
 		<list key="artifactId">
+			<item value="sampleHASAApplication"/>
+			<item value="SampleCollegeApplication"/>
 			<item value="OneToOneRelationShipBidirectional"/>
 			<item value="InheritanceMapping1"/>
 			<item value="DemoApp11"/>

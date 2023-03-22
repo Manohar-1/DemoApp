@@ -25,7 +25,7 @@ public class Demo4 {
 		u1.setPhone(phones); 
 		
 		
-		EntityManagerFactory emf = Persistence
+		
 	}
 
 }
